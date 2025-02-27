@@ -1,0 +1,40 @@
+@import "tailwindcss";
+.firamono-regular {
+  font-family: "Fira Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.firamono-medium {
+  font-family: "Fira Mono", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-mono-bold {
+  font-family: "Fira Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+	scrollbar-width: none;
+	scrollbar-color: #D5C4A1 #282828;
+	scroll-behavior: smooth;
+	font-family: "Fira Mono", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+nav > ul {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+nav > ul > li > a:hover  {
+	color: #98971A;
+	text-decoration: none;
+}
+#indicator {
+	width: 100%;
+	height: 3px;
+	background-color: #98971A;
+}

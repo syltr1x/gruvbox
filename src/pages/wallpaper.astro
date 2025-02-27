@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+
+---
+
+<Layout title="Wallpapers collection">
+	<nav class="mt-3"><ul>
+			<li><a href="/">Ports</a></li>
+			<li><a href="contributing">Contributing</a></li>
+			<li>
+				<a style="color: #98971A;" href="wallpaper">Wallpapers</a>
+				<div id="indicator" transition:name="navigator"/>
+			</li>
+	</ul></nav>
+	<h1 class="firamono-medium text-center text-5xl mt-5 mb-10">Gruvbox Wallpapers</h1>
+	<ul id="wallpapers">
+		<li><a href="https://gruvbox-wallpapers.pages.dev/" target="_blank">- gruvbox-wallpapers</a></li>
+		<li><a href="https://github.com/dharmx/walls/tree/main/gruvbox" target="_blank">- walls/gruvbox</a></li>
+	</ul>
+</Layout>
+<style>
+	#wallpapers > li > a:hover {
+		color: #BDAE93;
+		text-decoration: underline;
+	}
+</style>

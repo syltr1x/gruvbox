@@ -1,0 +1,362 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout title="Contributing">
+	<nav class="mt-3"><ul>
+			<li><a href="/">Ports</a></li>
+			<li>
+				<a style="color: #98971A;" href="contributing">Contributing</a>
+				<div id="indicator" transition:name="navigator"/>
+			</li>
+			<li><a href="wallpaper">Wallpapers</a></li>
+	</ul></nav>
+	<h1 class="firamono-medium text-center text-5xl mt-5 mb-10">Gruvbox Colorscheme</h1>
+	<ul id="schemas">
+		<li class="firamono-regular block md:hidden"><a href="#dark">Dark scheme</a></li>
+		<li class="firamono-regular block md:hidden"><a href="#light">Light scheme</a></li>
+	</ul>
+	<div class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+		<div>
+			<h1 id="dark" class="text-center text-4xl mt-10">Dark mode</h1>
+			<table class="mx-auto">
+				<thead>
+					<tr>
+						<td>Color</td>
+						<td>Code</td>
+						<td>Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Background hard</td>
+						<td>#1D2021</td>
+						<td class="color" style="background: #1D2021"></td>
+					</tr>
+					<tr>
+						<td>Background medium</td>
+						<td>#282828</td>
+						<td class="color" style="background: #282828"></td>
+					</tr>
+					<tr>
+						<td>Background soft</td>
+						<td>#32302F</td>
+						<td class="color" style="background: #32302F"></td>
+					</tr>
+					<tr>
+						<td>Background 1</td>
+						<td>#3C3836</td>
+						<td class="color" style="background: #3C3836"></td>
+					</tr>
+					<tr>
+						<td>Background 2</td>
+						<td>#504945</td>
+						<td class="color" style="background: #504945"></td>
+					</tr>
+					<tr>
+						<td>Background 3</td>
+						<td>#665C54</td>
+						<td class="color" style="background: #665C54"></td>
+					</tr>
+					<tr>
+						<td>Background 4</td>
+						<td>#7C6F64</td>
+						<td class="color" style="background: #7C6F64"></td>
+					</tr>
+					<tr>
+						<td>Foreground 0</td>
+						<td>#FBF1C7</td>
+						<td class="color" style="background: #FBF1C7"></td>
+					</tr>
+					<tr>
+						<td>Foreground 1</td>
+						<td>#EBDBB2</td>
+						<td class="color" style="background: #EBDBB2"></td>
+					</tr>
+					<tr>
+						<td>Foreground 2</td>
+						<td>#D5C4A1</td>
+						<td class="color" style="background: #D5C4A1"></td>
+					</tr>
+					<tr>
+						<td>Foreground 3</td>
+						<td>#BDAE93</td>
+						<td class="color" style="background: #BDAE93"></td>
+					</tr>
+					<tr>
+						<td>Foreground 4</td>
+						<td>#A89984</td>
+						<td class="color" style="background: #A89984"></td>
+					</tr>
+				</tbody>
+			</table>
+			<h1 class="text-2xl text-center mt-5">Accent Colors</h1>
+			<table class="mx-auto mb-15">
+				<thead>
+					<tr>
+						<td>Color</td>
+						<td>Code</td>
+						<td>Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Red</td>
+						<td>#CC241D</td>
+						<td class="color" style="background: #CC241D"></td>
+					</tr>
+					<tr>
+						<td>Orange</td>
+						<td>#D65D0E</td>
+						<td class="color" style="background: #D65D0E"></td>
+					</tr>
+					<tr>
+						<td>Green</td>
+						<td>#98971A</td>
+						<td class="color" style="background: #98971A"></td>
+					</tr>
+					<tr>
+						<td>Yellow</td>
+						<td>#D79921</td>
+						<td class="color" style="background: #D79921"></td>
+					</tr>
+					<tr>
+						<td>Blue</td>
+						<td>#458588</td>
+						<td class="color" style="background: #458588"></td>
+					</tr>
+					<tr>
+						<td>Purple</td>
+						<td>#B16286</td>
+						<td class="color" style="background: #B16286"></td>
+					</tr>
+					<tr style="border-bottom: 1px solid #A89984">
+						<td>Aqua</td>
+						<td>#689D6A</td>
+						<td class="color" style="background: #689D6A"></td>
+					</tr>
+					<tr>
+						<td>Red shiny</td>
+						<td>#9D0006</td>
+						<td class="color" style="background: #9D0006"></td>
+					</tr>
+					<tr>
+						<td>Orange shiny</td>
+						<td>#AF3A03</td>
+						<td class="color" style="background: #AF3A03"></td>
+					</tr>
+					<tr>
+						<td>Green shiny</td>
+						<td>#79740E</td>
+						<td class="color" style="background: #79740E"></td>
+					</tr>
+					<tr>
+						<td>Yellow shiny</td>
+						<td>#B57614</td>
+						<td class="color" style="background: #B57614"></td>
+					</tr>
+					<tr>
+						<td>Blue shiny</td>
+						<td>#076678</td>
+						<td class="color" style="background: #076678"></td>
+					</tr>
+					<tr>
+						<td>Purple shiny</td>
+						<td>#8F3F71</td>
+						<td class="color" style="background: #8F3F71"></td>
+					</tr>
+					<tr>
+						<td>Aqua shiny</td>
+						<td>#427B58</td>
+						<td class="color" style="background: #427B58"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h1 id="light" class="text-center text-4xl mt-10">Light mode</h1>
+			<table class="mx-auto">
+				<thead>
+					<tr>
+						<td>Color</td>
+						<td>Code</td>
+						<td>Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Background hard</td>
+						<td>#F9F5D7</td>
+						<td class="color" style="background: #F9F5D7"></td>
+					</tr>
+					<tr>
+						<td>Background medium</td>
+						<td>#FBF1C7</td>
+						<td class="color" style="background: #FBF1C7"></td>
+					</tr>
+					<tr>
+						<td>Background soft</td>
+						<td>#F2E5BC</td>
+						<td class="color" style="background: #F2E5BC"></td>
+					</tr>
+					<tr>
+						<td>Background 1</td>
+						<td>#EBDBB2</td>
+						<td class="color" style="background: #EBDBB2"></td>
+					</tr>
+					<tr>
+						<td>Background 2</td>
+						<td>#D5C4A1</td>
+						<td class="color" style="background: #D5C4A1"></td>
+					</tr>
+					<tr>
+						<td>Background 3</td>
+						<td>#BDAE93</td>
+						<td class="color" style="background: #BDAE93"></td>
+					</tr>
+					<tr>
+						<td>Background 4</td>
+						<td>#A89984</td>
+						<td class="color" style="background: #A89984"></td>
+					</tr>
+					<tr>
+						<td>Foreground 0</td>
+						<td>#282828</td>
+						<td class="color" style="background: #282828"></td>
+					</tr>
+					<tr>
+						<td>Foreground 1</td>
+						<td>#3C3836</td>
+						<td class="color" style="background: #3C3836"></td>
+					</tr>
+					<tr>
+						<td>Foreground 2</td>
+						<td>#504945</td>
+						<td class="color" style="background: #504945"></td>
+					</tr>
+					<tr>
+						<td>Foreground 3</td>
+						<td>#665C54</td>
+						<td class="color" style="background: #665C54"></td>
+					</tr>
+					<tr>
+						<td>Foreground 4</td>
+						<td>#7C6F64</td>
+						<td class="color" style="background: #7C6F64"></td>
+					</tr>
+				</tbody>
+			</table>
+			<h1 class="text-2xl text-center mt-5">Accent Colors</h1>
+			<table class="mx-auto mb-15">
+				<thead>
+					<tr>
+						<td>Color</td>
+						<td>Code</td>
+						<td>Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Red</td>
+						<td>#CC241D</td>
+						<td class="color" style="background: #CC241D"></td>
+					</tr>
+					<tr>
+						<td>Orange</td>
+						<td>#D65D0E</td>
+						<td class="color" style="background: #D65D0E"></td>
+					</tr>
+					<tr>
+						<td>Green</td>
+						<td>#98971A</td>
+						<td class="color" style="background: #98971A"></td>
+					</tr>
+					<tr>
+						<td>Yellow</td>
+						<td>#D79921</td>
+						<td class="color" style="background: #D79921"></td>
+					</tr>
+					<tr>
+						<td>Blue</td>
+						<td>#458588</td>
+						<td class="color" style="background: #458588"></td>
+					</tr>
+					<tr>
+						<td>Purple</td>
+						<td>#B16286</td>
+						<td class="color" style="background: #B16286"></td>
+					</tr>
+					<tr style="border-bottom: 1px solid #a89984">
+						<td>Aqua</td>
+						<td>#689D6A</td>
+						<td class="color" style="background: #689D6A"></td>
+					</tr>
+					<tr>
+						<td>Red shiny</td>
+						<td>#FB4934</td>
+						<td class="color" style="background: #FB4934"></td>
+					</tr>
+					<tr>
+						<td>Orange shiny</td>
+						<td>#FE8019</td>
+						<td class="color" style="background: #FE8019"></td>
+					</tr>
+					<tr>
+						<td>Green shiny</td>
+						<td>#B8BB26</td>
+						<td class="color" style="background: #B8BB26"></td>
+					</tr>
+					<tr>
+						<td>Yellow shiny</td>
+						<td>#FABD2F</td>
+						<td class="color" style="background: #FABD2F"></td>
+					</tr>
+					<tr>
+						<td>Blue shiny</td>
+						<td>#83A598</td>
+						<td class="color" style="background: #83A598"></td>
+					</tr>
+					<tr>
+						<td>Purple shiny</td>
+						<td>#D3869B</td>
+						<td class="color" style="background: #D3869B"></td>
+					</tr>
+					<tr>
+						<td>Aqua shiny</td>
+						<td>#8EC07C</td>
+						<td class="color" style="background: #8EC07C"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</Layout>
+<style>
+	#schemas {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+	}
+	#schemas > li > a:hover  {
+		color: #BDAE93;
+		text-decoration: underline;
+	}
+	table {
+		overflow: hidden;
+		background: #32302F;
+		border-radius: 5px;
+	}
+	thead {
+		border-bottom: 1px solid #a89984;
+	}
+	td:first-child {
+		width: 170px;
+	}
+	td {
+		padding: 5px 8px;
+	}
+	.color {
+		cursor: copy;
+	}
+</style>
