@@ -1,26 +1,25 @@
 @import "tailwindcss";
-.firamono-regular {
-  font-family: "Fira Mono", serif;
+
+@font-face {
+	font-family: 'Fira Mono Regular';
+  src: url('../assets/fonts/FiraMono-Regular.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
+  font-display: swap;
 }
-
-.firamono-medium {
-  font-family: "Fira Mono", serif;
+@font-face {
+	font-family: 'Fira Mono Medium';
+  src: url('../assets/fonts/FiraMono-Medium.ttf') format('truetype');
   font-weight: 500;
-  font-style: normal;
+  font-display: swap;
 }
-
-.fira-mono-bold {
-  font-family: "Fira Mono", serif;
-  font-weight: 700;
-  font-style: normal;
+.firamono-medium {
+	font-family: 'Fira Mono Medium', monospace;
 }
 * {
 	scrollbar-width: none;
 	scrollbar-color: #D5C4A1 #282828;
 	scroll-behavior: smooth;
-	font-family: "Fira Mono", serif;
+	font-family: "Fira Mono Regular", serif;
 	font-weight: 400;
 	font-style: normal;
 }
