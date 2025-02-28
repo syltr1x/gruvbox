@@ -2,8 +2,7 @@
 import "../styles/global.css";
 import { ClientRouter } from 'astro:transitions';
 
-const { title } = Astro.props;
-const desc = "Description"
+const { title, desc } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -11,7 +10,7 @@ const desc = "Description"
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta property="og:title" content=`${title} - Gruvbox`>
-    <meta property="og:description" content=desc>
+		<meta property="og:description" content=`${desc}`>
 		<meta property="og:image" content="/gruvbox/favicon.svg">
 
 		<title>{title} - Gruvbox</title>
