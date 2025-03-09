@@ -12,14 +12,25 @@ import "../styles/global.css";
 			</li>
 			<li><a href="/gruvbox/wallpaper">Wallpapers</a></li>
 	</ul></nav>
-	<h1 class="firamono-medium text-center text-5xl mt-5 mb-10">Gruvbox Colorscheme</h1>
+	<h1 class="firamono-medium text-3xl mt-6 mb-2">To contribute</h1>
+	<p>1. Fork <a target="_blank" href="https://github.com/syltr1x/gruvbox">this repo</a> and clone it</p>
+	<p>2. Add a file in src/content/themes/ called "port.md" following this example</p>
+<pre><code>---
+author: morhetz
+tags: ["tag1", "tag2"]
+icon: "https://www.svgrepo.com/show/473822/vim.svg"
+url: "https://github.com/morhetz/gruvbox"
+---</code></pre>
+	<p>3. Create a PR including new port</p>
+	<p class="mt-8">If you want to create a port check the colorscheme</p>
+	<h2 class="firamono-medium text-center text-3xl mt-5 mb-5">Gruvbox Colorscheme</h2>
 	<ul id="schemas">
-		<li class="firamono-regular block md:hidden"><a href="#dark">Dark scheme</a></li>
-		<li class="firamono-regular block md:hidden"><a href="#light">Light scheme</a></li>
+		<li class="block md:hidden"><a href="#dark">Dark scheme</a></li>
+		<li class="block md:hidden"><a href="#light">Light scheme</a></li>
 	</ul>
 	<div class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
 		<div>
-			<h1 id="dark" class="text-center text-4xl mt-10">Dark mode</h1>
+			<h3 id="dark" class="text-center text-2xl mt-10">Dark mode</h3>
 			<table class="mx-auto">
 				<thead>
 					<tr>
@@ -91,7 +102,7 @@ import "../styles/global.css";
 					</tr>
 				</tbody>
 			</table>
-			<h1 class="text-2xl text-center mt-5">Accent Colors</h1>
+			<h4 class="text-lg text-center mt-5">Accent Colors</h4>
 			<table class="mx-auto mb-15">
 				<thead>
 					<tr>
@@ -175,7 +186,7 @@ import "../styles/global.css";
 			</table>
 		</div>
 		<div>
-			<h1 id="light" class="text-center text-4xl mt-10">Light mode</h1>
+			<h5 id="light" class="text-center text-2xl mt-10">Light mode</h5>
 			<table class="mx-auto">
 				<thead>
 					<tr>
@@ -247,7 +258,7 @@ import "../styles/global.css";
 					</tr>
 				</tbody>
 			</table>
-			<h1 class="text-2xl text-center mt-5">Accent Colors</h1>
+			<h6 class="text-lg text-center mt-5">Accent Colors</h6>
 			<table class="mx-auto mb-15">
 				<thead>
 					<tr>
@@ -358,5 +369,10 @@ import "../styles/global.css";
 	}
 	.color {
 		cursor: copy;
+	}
+	pre {
+		background: #282828;
+		padding: 3px 8px;
+		border-radius: 9px;
 	}
 </style>
