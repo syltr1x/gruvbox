@@ -35,9 +35,9 @@ const themes: Theme[] = await getCollection('themes');
         const { author, icon, tags, url } = data;
 
         return (
-          <a id={`card-${slug}`} data-slug={slug} href={url} target="_blank" class="rounded-md px-4 py-2 card">
+          <a id={`card-${slug}`} data-slug={slug} href={url} target="_blank" class="rounded-md px-4 py-2 card relative">
             <div class="flex justify-between">
-              <h1 class="text-2xl"><b>{slug}</b></h1>
+              <p class="text-2xl"><b>{slug}</b></p>
 							<img 
 								src={icon} 
 								alt=`${slug} icon`
@@ -46,10 +46,10 @@ const themes: Theme[] = await getCollection('themes');
 								width="40"
 							/>
             </div>
-            <div class="grid xl:grid-cols-3 grid-cols-2 md:grid-cols-2 grid-rows-1 gap-3 mt-5">
+            <div class="grid xl:grid-cols-3 grid-cols-2 md:grid-cols-2 grid-rows-1 gap-3 mt-5 mb-7">
               {tags.map((t) => <p class="tag">{t}</p>)}
             </div>
-						<h3 class="mt-2" style="color: #D5C4A1;">{author}</h3>
+						<p class="absolute bottom-1" style="color: #D5C4A1;">{author}</p>
           </a>
         )
       })
