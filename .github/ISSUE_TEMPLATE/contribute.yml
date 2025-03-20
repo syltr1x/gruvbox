@@ -1,0 +1,38 @@
+name: "Añade tu port para unificar Gruvbox"
+description: "Completa todos los datos para añadir tu port"
+title: "[Nuevo port]: <nombre-del-port>"
+labels: ["port contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Informacion del port"
+  - type: input
+    id: nombre-autor
+    attributes:
+      label: Autor del port
+      placeholder: morhetz
+    validations:
+      required: true
+  - type: input
+    id: tags-port
+    attributes:
+      label: Tags del port (separado por una ", ")
+      placeholder: productivity, cli-tool, text editor
+    validations:
+      required: true
+  - type: input
+    id: icon-url
+    attributes:
+      label: Url de un icono
+      description: Url de svgrepo que apunte a el icono de la aplicacion del port
+      placeholder: https://www.svgrepo.com/show/473822/vim.svg
+    validations:
+      required: true
+  - type: input
+    id: repositorio-port
+    attributes:
+      label: Repositorio del Port
+      description: Enlace al repositorio del port (GitHub, GitLab, etc.)
+      placeholder: https://github.com/morhetz/gruvbox
+    validations:
+      required: true
