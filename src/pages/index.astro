@@ -26,7 +26,7 @@ const themes: Theme[] = await getCollection('themes');
   </nav>
 	<h1 class="firamono-medium text-center text-5xl mt-5 mb-10">Gruvbox Ports</h1>
 	<label>Port name</label>
-	<input type="text" id="search" placeholder="vim, neovim, ...">
+	<input type="text" id="search" placeholder="vim, neovim, ..." class="place-self-center w-3/4">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" id="themes-container">
     {
       themes.map(theme => {
@@ -34,7 +34,7 @@ const themes: Theme[] = await getCollection('themes');
         const { author, icon, tags, url } = data;
 
         return (
-          <a id={`card-${slug}`} data-slug={slug} href={url} target="_blank" class="rounded-md px-4 py-2 card relative">
+          <a id={`card-${slug}`} data-slug={slug} href={url} target="_blank" class="rounded-md px-4 gap-x-4 py-2 card relative">
             <div class="flex justify-between">
               <p class="text-2xl"><b>{slug}</b></p>
 							<img 
